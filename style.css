@@ -1,26 +1,20 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-  }
-  body{
-    height: 100vh;
-    width: 100%;
+}
+body{
+    background-color: aqua;
     display: flex;
+    height: 100vh;
     align-items: center;
-    background: #343F4F;
     justify-content: center;
-    
-  }
-  button{
-    height: 15%;
-    width: 20%;
-    font-size: 150%;
-    background: #3b413e;
-    font-style: italic;
-    margin: 25px;
-    border: 2px solid #3b413e;
-    border-radius: 20px;
-    box-shadow: rgba(209, 255, 213, 0.493) 0px 1px 9px 0px;
-  }
+}
+button{
+    width: 45%;
+    height: 50px;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 3px gray;
+}
