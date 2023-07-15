@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+}
+ion-icon {
+    color: rgb(96, 96, 96);
+    font-size: 25px;
+}
+
+.Header .laft-side {
+    display: flex;
+    align-items: center;
+}
+.laft-side img {
+    width: 100%;
+    height: 30px;
+    margin-left: 15px;
+}
+.Header .search {
+    display: flex;
+}
+.Header .search form {
+    height: 35px;
+    padding: 0px;
+    display: flex;
+}
+.search input {
+    width: 520px;
+    border-radius: 20px 0 0 20px ;
+    border: 1px solid rgb(96, 96, 96);
+    padding: 12px;
+}
+.search button{
+    border: 1px solid rgb(96, 96, 96);
+    border-left: none;
+    width: 52px;
+    border-radius: 0px 20px 20px 0px ;
+}
+.search a{
+    font-size: 25px;
+}
+.search i{
+    padding: 4px;
+    font-size: 25px;
+cursor: pointer;
+}
+.Header .right-side i {
+    font-size: 25px;
+    padding: 9px;
+    margin: 9px;
+}
+
+.sidebar {
+    width: 222px;
+    height:100vh;
+    position: fixed;
+    display: inline;
+    margin-top: 60px;
+    background: #fff;
+}
+.side-icon {
+    margin: 19px;
+    font-size: 22px;
+}
+.Icon {
+    padding: 9px;
+    width: 200px;
+    height: 39px;
+}
+.Icon i{
+    cursor: pointer;
+    font-style: normal;
+}
+span{
+    margin-left: 15px;
+}
+hr{
+    margin: 20px 0 9px 0px;
+    color: rgb(179, 176, 176);
+}
+.body-container{
+    display: flex;
+justify-content: right;
+}
+.content{
+margin-top: 52px;
+    width: 83%;
+    height: 100vh;
+}
+.logo-benar img{
+height: 154px;
+width: 100%;
+}
+.subscribers-section{
+   display: flex;
+   justify-content: space-between; 
+}
+.logo-lmg{
+    display: inline-block;
+}
+.logo-lmg  img{
+    height: 70px;
+    width: 70px;
+}
+.logo-lmg .logo-dital{
+    display: inline-block;
+}
+.logo-dital{
+    margin-left: 15px;
+}
+.logo-dital h2{
+    font-size: 25px;
+    margin-bottom: -19px;
+}
+.logo-dital span{
+    font-size: 15px;
+}
+.subscribe-butten button{
+    cursor: pointer;
+    margin: 35px;
+    padding: 9px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    width: 99px;
+    font-size: 15px;
+}
+.navbare{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    border-bottom: #dcdcdc 1px solid;
+}
+.navbare button{
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    background:none;
+    margin-bottom: 9px;
+}
+.video-info .popular-video {
+    margin: 20PX;
+}
+.popular-video button{
+   background: #cfcdcd;
+   border: #cfcdcd 1px solid;
+   padding: 5px;
+   margin-right:9px;
+   border-radius: 20px;
+   cursor: pointer;
+}
+.web-video {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.Videos{
+    width: 300px;
+    border-radius: 15px;
+    height: 150px;
+    display: block;
+    margin: 22px;
+}
+.Videos img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+.Videos a{
+    color: #000;
+}
+.Web-video {
+   display: flex;
+   margin-top: 65px;
+}
