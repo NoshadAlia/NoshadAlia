@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link rel="stylesheet" href="./desh.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contener">
+        <div class="menu">
+            <div class="logo">
+                <img src="../Aseede/logo02-removebg-preview.png" alt="">
+                <img src="../Aseede/logo-removebg-preview.png" alt="">
+                <img src="../Aseede/logo03-removebg-preview.png" alt="">
+                <img src="../Aseede/logo04-removebg-preview.png" alt="">
+            </div>
+            <br />
+            <p>EXPENSES MANAGAMENT</p>
+            <hr />
+            <div class="menupart">
+                <br />
+                <div class="part">
+                    <a href=""><span class="material-symbols-outlined">
+                            home
+                        </span>
+                    </a>
+                    <a href="">HOME</a>
+                    <a href=""></a>
+                </div>
+                <hr />
+                <div class="part">
+                    <a href=""><span class="material-symbols-outlined">
+                            settings
+                        </span>
+                    </a>
+                    <a href="">SETTING</a>
+                    <a href=""></a>
+                </div>
+                <hr />
+                <div class="part">
+                    <a href=""><span class="material-symbols-outlined">
+                            send_and_archive
+                        </span>
+                    </a>
+                    <a href="">SEND&ARCHIVE</a>
+                    <a href=""></a>
+                </div>
+                <hr />
+                <div class="part">
+                    <a href=""><span class="material-symbols-outlined">
+                            print
+                        </span>
+                    </a>
+                    <a href="">PRINT DOCUMENT</a>
+                    <a href=""></a>
+                </div>
+                <hr />
+                <div class="part">
+                    <a href="./login.html"><span class="material-symbols-outlined">
+                            power_settings_new
+                        </span>
+                    </a>
+                    <a href="./login.html">LOGOUT</a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="tabil">
+            <div class="search">
+                <div class="input">
+                    <span class="material-symbols-outlined">
+                        manage_search
+                    </span>
+                    <input type="search" placeholder="Search by category..." id="Searchcategory" onkeyup="search()">
+                </div>
+                
+            </div>
+            <div class="expansive">
+                <div class="head">
+                    <h2><button> SAVE EXPENSES</button></h2>
+                </div>
+                <div class="form">
+                    <form id="Userform" ontimeupdate="off" onsubmit="onFormSubmit()">
+                        <div class="valeu">
+                            <label for="expansive">EXPANSIVE</label>
+                            <input type="text" placeholder="ENTER A EXPANSIVE" id="expan" >
+                        </div>
+                        <div class="valeu">
+                            <label for="expansive">EXPANSIVE AMOUNT</label>
+                            <input type="number" placeholder="ENTER A EXPANSIVE AMOUNT" id="amount" required>
+                        </div>
+                        <div class="valeu">
+                            <label for="expansive">EXPANSIVE CATEGORY</label>
+                            <input type="text" placeholder="ENTER A EXPANSIVE CATEGORY" id="categ" required>
+                            <select name="" id="categ" >Select the CATEGORY</select>
+                        </div>
+                        <div class="save">
+                            <input type="submit" value="SAVE NOW" class="save" id="addExpense()" onclick="save()">
+                        </div>
+                    </form>
+                </div>
+                <div class="usertab">
+                    <table id="mytable">
+                        <thead>
+                            <tr>
+                                <th>EX.ID</th>
+                                <th>Category</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                                <th>Created On</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                             
+                           </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./desh.js"></script>
+</body>
+
+</html>
