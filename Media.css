@@ -1,0 +1,114 @@
+@media screen and (max-width: 460px) {
+    .header {
+        background-size:auto;
+    }
+
+    .bear {
+        width: 100%;
+        position: fixed;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .link ul {
+        display: none;
+    }
+
+    .link ul li {
+        display: none;
+    }
+
+    .link a {
+        display: none;
+    }
+
+    .drop {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .drop:hover .dropdown-content {
+        display: block;
+    }
+
+    .contant {
+        background-image: url(./img/background.png);
+        background-size: cover;
+        height: 150vh;
+        padding: 10px;
+    }
+
+    .Home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .pic img {
+        margin-top: 55px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .Info {
+        margin-top: 50px;
+        width: 100%;
+        width: 100%;
+    }
+
+    .Info button {
+        margin: 0px 0px 50px 0px;
+    }
+    .About{
+        margin-top: 0px;
+        border: none;
+        padding: 4px;
+        background-image:url(./img/images.jpeg);
+        background-size: cover;
+        height: 100Vh;
+        display: flex;
+        justify-content: center;
+    }
+    .About img{
+        display: none;
+    }
+    .Projects {
+        height: 50vh;
+        text-align: center;
+    }
+    .contact{
+        height: 40vh;
+        background-color: #465363;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+}
