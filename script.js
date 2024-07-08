@@ -1,40 +1,49 @@
-document.querySelector('form').onsubmit = function (e) {
-    e.preventDefault();
-    let pass = document.getElementById("password").value
-    let conpass = document.getElementById("confirmpassword").value
+const apiKey = "e51424ea0c378e1e93a883cf18be1f04";
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`;
 
-    if (pass != conpass) {
-        swal("Password Error", "...Password and Confirm Password are not same!");
-    } else {
-        let uname = document.getElementById("username").value;
-        let uemail = document.getElementById("email").value;
-        let upassword = document.getElementById("password").value;
-        let cpassword = document.getElementById("confirmpassword").value
+const searchBox = document.getElementById("Box");
+const searchBtn = document.getElementById("Btn");
+const wearhericon = document.getElementById("wearhericon");
 
 
-        const userData = {
-            username: uname,
-            email: uemail,
-            password: upassword,
-            id: Math.floor(Math.random() * 100001) + 1001
-        }
+async function checkWeather(city) {
+    const response = await fetch(`${apiUrl}${city}&appid=${apiKey}`);
 
-        let users = localStorage.getItem("usersData")
-        if (users == undefined) {
-            users = []
-        } else {
-            users = JSON.parse(users)
-        }
+    
+   
+        let data = await response.json();
 
-        users.push(userData)
+    console.log(data);
 
-        let data = JSON.stringify(users)
-        localStorage.setItem("usersData", data)
+    document.getElementById("city").innerHTML = '<i class="fa fa-map-marker me-2 text-red-700" aria-hidden="true"></i> ' + data.name;
+    document.getElementById("temp").innerHTML = Math.round(data.main.temp) + "°C";
+    document.getElementById("condition").innerHTML = data.weather[0].main;
+    document.getElementById("humidity").innerHTML = data.main.humidity + "%";
+    document.getElementById("wind").innerHTML = data.wind.speed + " Km/h";
 
-        swal("Well Come", "Sign-Up successfully"); 
-        document.getElementById("username").value = ""
-        document.getElementById("email").value = ""
-        document.getElementById("password").value = ""
-        document.getElementById("confirmpassword").value = ""
+    if(data.weather[0].main == "Clouds"){
+        wearhericon.src = "imge/cloud.png"
     }
+    else if(data.weather[0].main == "Clear"){
+        wearhericon.src = "imge/clear.png"
+    }
+    else if(data.weather[0].main == "Drizzle"){
+        wearhericon.src = "imge/drizzle.png"
+    }
+    else if(data.weather[0].main == "Rain"){
+        wearhericon.src = "imge/rain.png"
+    }
+    else if(data.weather[0].main == "Haze"){
+        wearhericon.src = "imge/haze.png"
+    }
+
+
+    
+
+    
 }
+
+searchBtn.addEventListener("click", () => {
+    checkWeather(searchBox.value);
+});
+
